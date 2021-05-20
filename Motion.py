@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 # move принимает режим и время задержки
 # конструктор класса Regime по умолчанию принимает позиции 0 и 111 градусов, но можно задать и свои
 
+# функция создания анимации
 def animate(regime: int, speed: float):
     tk = Tk()
     if regime == 1:
@@ -291,7 +292,7 @@ class Regime:
             if not flag1 and not flag2 and not flag3:
                 flag = False
 
-
+# Функция движения
 def move(regime: int, dt: float):
     # режим 1
     if regime == 1:
